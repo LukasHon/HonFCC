@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+#description {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-family: "Times New Roman", sans-serif;
+}
+
+#surveyForm {
+    padding: 40px;
+}
+
+.formGroup {
+    margin: 1rem;
+
+}
+

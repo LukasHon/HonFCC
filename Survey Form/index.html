@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device - width, initial - scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">
+    This webside is made to get certification from freeCodeCamp.
+</p>
+<form id="surveyForm">
+    <div class="formGroup">
+        <label id="name-label" for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter your name.">
+    </div>
+    <div class="formGroup">
+        <label id="email-label" for="name">Email: </label>
+        <input type="text" name="email" id="email" placeholder="Enter your email address.">
+    </div>
+    <div class="formGroup">
+        <label id="age-label" for="name">Age: </label>
+        <input type="number" name="age" id="number" min="10" max="99" placeholder="Age.">
+    </div>
+    <div class="formGroup">
+        <p>Choose one</p>
+        <select id="dropdown" name="role" class="formControl" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="prefenNo">Preffer not to say</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="formGroup">
+        <p>How my website looks?</p>
+        <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+            Terrifying
+        </label>
+        <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+            Trash
+        </label>
+        <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+            Good
+        </label>
+    </div>
+    <div class="formGroup">
+        <button type="submit" id="submit" class="submitButton">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
