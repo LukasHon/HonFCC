@@ -10,20 +10,21 @@
 <nav id="navbar">
     <header>JS Documentation</header>
     <ul>
-        <li><a class="nav-link" href="#Introduction">Úvod</a></li>
+        <li><a class="nav-link" href="#Úvod">Úvod</a></li>
         <li>
-            <a class="nav-link" href="#What_you_should_already_know">Co byste měli znát</a>
+            <a class="nav-link" href="#Co_byste_měli_znát">Co byste měli znát</a>
         </li>
         <li>
-            <a class="nav-link" href="#JavaScript_and_Java">JavaScript a Java</a>
+            <a class="nav-link" href="#JavaScript_a_Java">JavaScript a Java</a>
         </li>
         <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-        <li><a class="nav-link" href="#Variables">Variables (Proměnné)</a></li>
+        <li><a class="nav-link" href="#Proměnné">Proměnné</a></li>
+        <li><a class="nav-link" href="#Inspirace">Inspirace</a></li>
     </ul>
 </nav>
 
 <main id="main-doc">
-    <section class="main-section" id="Introduction">
+    <section class="main-section" id="Úvod">
         <header>Úvod</header>
         <article>
             <p>
@@ -36,10 +37,8 @@
 
             <p>
                 JavaScript obsahuje standardní knihovnu objektů, jako je Array,
-                Datum a matematika a základní sada jazykových prvků, jako je např
-                operátory, kontrolní struktury a příkazy. Core JavaScript umí
-                být rozšířen pro různé účely jeho doplněním
-                další předměty; například:
+                Datum a matematika a základní sada jazykových prvků, jako jsou např.
+                operátory, kontrolní struktury a příkazy.
             </p>
             <ul>
                 <li>
@@ -58,9 +57,16 @@
                     server.
                 </li>
             </ul>
+            <p>Příklad kódu na tlačítko, barvu pozadí, barvu textu a stylu:</p>
+
+            <code>button (Click me)</code>
+            <code>body style="background-color:powderblue;</code>
+            <code>style="color:blue;">I am blue</code>
+            <code>style="font-size:50px;">I am big</code>
+
         </article>
     </section>
-    <section class="main-section" id="What_you_should_already_know">
+    <section class="main-section" id="Co_byste_měli_znát">
         <header>Co byste měli znát</header>
         <article>
             <p>Tato příručka předpokládá, že máte následující základní znalosti:</p>
@@ -79,11 +85,10 @@
             </ul>
         </article>
     </section>
-    <section class="main-section" id="JavaScript_and_Java">
+    <section class="main-section" id="JavaScript_a_Java">
         <header>JavaScript a Java</header>
         <article>
             <p>
-
                 JavaScript a Java jsou si v některých ohledech podobné, ale zásadně
                 v některých jiných se liší. Jazyk JavaScript se podobá Javě, ale
                 nemá statické psaní Java a silnou kontrolu typu.
@@ -93,7 +98,6 @@
             </p>
 
             <p>
-
                 Na rozdíl od Java je kompilační systém tříd vytvořených pomocí
                 deklarací, JavaScript podporuje běhový systém založený na malém
                 počet datových typů představujících numerický, booleovský a řetězcový
@@ -105,9 +109,9 @@
                 objekty, které se provádějí jako volně psané metody.
             </p>
             <p>
-                JavaScript je ve srovnání s Javou velmi volný jazyk. Vy ne
-                musí deklarovat všechny proměnné, třídy a metody. Nemáte
-                zabývat se tím, zda jsou metody veřejné, soukromé nebo
+                JavaScript je ve srovnání s Javou velmi volný jazyk. Vy nemusíte deklarovat všechny proměnné, třídy a
+                metody. Nemusíte se
+                zabývat tím, zda jsou metody veřejné, soukromé nebo
                 chráněné a nemusíte implementovat rozhraní. proměnné,
                 parametry a návratové typy funkcí nejsou explicitně zadány.
             </p>
@@ -123,10 +127,10 @@
             </code>
         </article>
     </section>
-    <section class="main-section" id="Variables">
+    <section class="main-section" id="Proměnné">
         <header>Proměnné</header>
         <p>
-            Proměnné používáte jako symbolické názvy hodnot ve vaší aplikaci.
+            Proměnné (variables) používáte jako symbolické názvy hodnot ve vaší aplikaci.
             Názvy proměnných, nazývané identifikátory, odpovídají určitým pravidlům.
         </p>
         <p>
@@ -143,56 +147,12 @@
             Number_hits, temp99 a _name.
         </p>
     </section>
-    <section class="main-section" id="Declaring_variables">
-        <header>Deklarování proměnné</header>
-        <article>
-            Proměnnou můžete deklarovat třemi způsoby:
-            <p>
-                S klíčovým slovem var. Například, <code>var x = 42.</code> tuto
-                syntaxi lze použít k deklaraci lokálních i globálních proměnných.
-            </p>
-            <p>
-                Jednoduše mu přiřadíte hodnotu. Například,
-                <code>x = 42.</code> To vždy deklaruje globální proměnnou. To
-                generuje přísné varování JavaScriptu. Tohle byste neměli používat
-                varianta.
-            </p>
-            <p>
-                S klíčovým slovem let. Například,<code> let y = 13.</code> Tento
-                syntaxi lze použít k deklaraci lokální proměnné rozsahu bloku. Vidět
-                Variabilní rozsah níže.
-            </p>
-        </article>
-    </section>
-    <section class="main-section" id="Variable_scope">
-        <header>Variable scope</header>
-        <article>
-            <p>
-                Když deklarujete proměnnou mimo jakoukoli funkci, nazývá se a
-                globální proměnná, protože je dostupná pro jakýkoli jiný kód v
-                aktuální dokument. Když deklarujete proměnnou v rámci funkce, je to
-                se nazývá lokální proměnná, protože je dostupná pouze v rámci této proměnné
-                funkce.
-            </p>
 
-            <p>
-                JavaScript před ECMAScript 2015 nemá příkaz bloku
-                rozsah; spíše je proměnná deklarovaná v bloku lokální pro
-                funkce (nebo globální rozsah), ve které se blok nachází. Pro
-                například následující kód zaznamená 5, protože rozsah x je
-                funkce (nebo globální kontext), ve které je deklarováno x, nikoli
-                bloku, což je v tomto případě příkaz if.
-            </p>
-            <code>if (true) { var x = 5; } console.log(x); // 5</code>
-            <p>
-                Toto chování se změní při použití deklarace let zavedené v
-                ECMAScript 2015.
-            </p>
-
-            <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-                not defined</code>
-        </article>
+    <section class="main-section" id="Inspirace">
+        <header>Inspirace</header>
+        <p>Tento projekt byl dělán podle FreeCodeCamp.</p>
     </section>
+
 </main>
 
 </body>
