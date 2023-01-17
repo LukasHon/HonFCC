@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device - width, initial - scale=1.0">
+    <title>Technical documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="navbar">
+    <header>JS Documentation</header>
+    <ul>
+        <li><a class="nav-link" href="#Introduction">Úvod</a></li>
+        <li>
+            <a class="nav-link" href="#What_you_should_already_know">Co byste měli znát</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#JavaScript_and_Java">JavaScript a Java</a>
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables (Proměnné)</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Úvod</header>
+        <article>
+            <p>
+                JavaScript je multiplatformní, objektově orientovaný skriptovací jazyk.
+                Je to malý a lehký jazyk. Uvnitř hostitelského prostředí
+                (například webový prohlížeč), JavaScript lze připojit k
+                objektů svého prostředí, aby bylo možné programově ovládat
+                jim.
+            </p>
+
+            <p>
+                JavaScript obsahuje standardní knihovnu objektů, jako je Array,
+                Datum a matematika a základní sada jazykových prvků, jako je např
+                operátory, kontrolní struktury a příkazy. Core JavaScript umí
+                být rozšířen pro různé účely jeho doplněním
+                další předměty; například:
+            </p>
+            <ul>
+                <li>
+                    JavaScript na straně klienta rozšiřuje základní jazyk poskytováním
+                    objektů k ovládání prohlížeče a jeho modelu DOM (Document Object Model).
+                    Například rozšíření na straně klienta umožňují umístění aplikace
+                    prvky ve formuláři HTML a reagovat na události uživatele, jako je myš
+                    kliknutí, zadávání formuláře a navigace na stránce.
+                </li>
+                <li>
+                    JavaScript na straně serveru rozšiřuje základní jazyk poskytováním
+                    objekty relevantní pro spuštění JavaScriptu na serveru. Například,
+                    rozšíření na straně serveru umožňují aplikaci komunikovat s a
+                    databáze, poskytují kontinuitu informací od jednoho vyvolání do
+                    jinou aplikaci nebo provádět manipulaci se soubory na a
+                    server.
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+        <header>Co byste měli znát</header>
+        <article>
+            <p>Tato příručka předpokládá, že máte následující základní znalosti:</p>
+
+            <ul>
+                <li>
+                    Obecná znalost Internetu a World Wide Web
+                    (WWW).
+                </li>
+                <li>Dobrá pracovní znalost HyperText Markup Language (HTML).
+                </li>
+                <li>
+                    Nějaké zkušenosti s programováním. Pokud s programováním začínáte, zkuste to
+                    jeden z výukových programů propojených na hlavní stránce o JavaScriptu.
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="JavaScript_and_Java">
+        <header>JavaScript a Java</header>
+        <article>
+            <p>
+
+                JavaScript a Java jsou si v některých ohledech podobné, ale zásadně
+                v některých jiných se liší. Jazyk JavaScript se podobá Javě, ale
+                nemá statické psaní Java a silnou kontrolu typu.
+                JavaScript se řídí většinou syntaxe výrazů Java a konvencí pojmenování
+                a základní konstrukty řízení toku, což byl důvod, proč tomu tak bylo
+                přejmenován z LiveScript na JavaScript.
+            </p>
+
+            <p>
+
+                Na rozdíl od Java je kompilační systém tříd vytvořených pomocí
+                deklarací, JavaScript podporuje běhový systém založený na malém
+                počet datových typů představujících numerický, booleovský a řetězcový
+                hodnoty. JavaScript má objektový model založený na prototypu namísto
+                běžnější objektový model založený na třídách. Model založený na prototypu
+                poskytuje dynamickou dědičnost; to znamená, že to, co se dědí, se může lišit
+                pro jednotlivé objekty. JavaScript také podporuje funkce bez
+                jakékoli zvláštní deklarativní požadavky. Funkce mohou být vlastnostmi
+                objekty, které se provádějí jako volně psané metody.
+            </p>
+            <p>
+                JavaScript je ve srovnání s Javou velmi volný jazyk. Vy ne
+                musí deklarovat všechny proměnné, třídy a metody. Nemáte
+                zabývat se tím, zda jsou metody veřejné, soukromé nebo
+                chráněné a nemusíte implementovat rozhraní. proměnné,
+                parametry a návratové typy funkcí nejsou explicitně zadány.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+            Chcete-li začít s psaním JavaScriptu, otevřete Zápisník a pište
+            váš první kód JavaScript „Hello world“:
+            <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                greetMe("World");
+            </code>
+        </article>
+    </section>
+    <section class="main-section" id="Variables">
+        <header>Proměnné</header>
+        <p>
+            Proměnné používáte jako symbolické názvy hodnot ve vaší aplikaci.
+            Názvy proměnných, nazývané identifikátory, odpovídají určitým pravidlům.
+        </p>
+        <p>
+            JavaScriptový identifikátor musí začínat písmenem, podtržítkem (_) nebo
+            znak dolaru ($); následující znaky mohou být také číslice (0-9).
+            Protože JavaScript rozlišuje velká a malá písmena, písmena obsahují znaky
+            "A" až "Z" (velká písmena) a znaky "a" až "z"
+            (malá písmena).
+        </p>
+        <p>
+            Můžete použít ISO 8859-1 nebo písmena Unicode, jako jsou å a ü in
+            identifikátory. Můžete také použít escape sekvence Unicode jako
+            znaky v identifikátorech. Některé příklady legálních jmen jsou
+            Number_hits, temp99 a _name.
+        </p>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+        <header>Deklarování proměnné</header>
+        <article>
+            Proměnnou můžete deklarovat třemi způsoby:
+            <p>
+                S klíčovým slovem var. Například, <code>var x = 42.</code> tuto
+                syntaxi lze použít k deklaraci lokálních i globálních proměnných.
+            </p>
+            <p>
+                Jednoduše mu přiřadíte hodnotu. Například,
+                <code>x = 42.</code> To vždy deklaruje globální proměnnou. To
+                generuje přísné varování JavaScriptu. Tohle byste neměli používat
+                varianta.
+            </p>
+            <p>
+                S klíčovým slovem let. Například,<code> let y = 13.</code> Tento
+                syntaxi lze použít k deklaraci lokální proměnné rozsahu bloku. Vidět
+                Variabilní rozsah níže.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+            <p>
+                Když deklarujete proměnnou mimo jakoukoli funkci, nazývá se a
+                globální proměnná, protože je dostupná pro jakýkoli jiný kód v
+                aktuální dokument. Když deklarujete proměnnou v rámci funkce, je to
+                se nazývá lokální proměnná, protože je dostupná pouze v rámci této proměnné
+                funkce.
+            </p>
+
+            <p>
+                JavaScript před ECMAScript 2015 nemá příkaz bloku
+                rozsah; spíše je proměnná deklarovaná v bloku lokální pro
+                funkce (nebo globální rozsah), ve které se blok nachází. Pro
+                například následující kód zaznamená 5, protože rozsah x je
+                funkce (nebo globální kontext), ve které je deklarováno x, nikoli
+                bloku, což je v tomto případě příkaz if.
+            </p>
+            <code>if (true) { var x = 5; } console.log(x); // 5</code>
+            <p>
+                Toto chování se změní při použití deklarace let zavedené v
+                ECMAScript 2015.
+            </p>
+
+            <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+                not defined</code>
+        </article>
+    </section>
+</main>
+
+</body>
+</html>

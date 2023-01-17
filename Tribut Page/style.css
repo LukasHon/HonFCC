@@ -1,0 +1,10 @@
+* {
+    text-align: center;
+}
+img {
+    display: block flex;
+}
+
+#image {
+    max-width: 100%;
+}
