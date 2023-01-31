@@ -7,33 +7,120 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div>
-    <header id="header">Mad Servers
-    <div class="logo">
-        <img id="header-img" src="/img/Server_2.png" alt="Server">
+
+
+<div id="page-wrapper">
+
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="/img/Server_2.png" alt="Mad Servers">Mad servers
+        </div>
         <nav id="nav-bar">
-            <ul>
-                <li> <a class="nav-link" href="#Home">Home</a></li>
-                <li> <a class="nav-link" href="#Servers">Servers</a></li>
-                <li> <a class="nav-link" href="#Price">Price</a></li>
+            <ul class="nav-li">
+                <li><a class="nav-link" href="#Home">Home</a></li>
+                <li><a class="nav-link" href="#Servers">Servers</a></li>
+                <li><a class="nav-link" href="#Price">Price</a></li>
             </ul>
         </nav>
-    </div>
     </header>
-</div>
-<div>
-    <section id="Home"></section>
-    <section id="Servers"></section>
-    <section id="Price"></section>
-</div>
-<iframe id="video" src="https://www.youtube.com/watch?v=sgP5jeBccfI&ab_channel=Bluesoul">Prostě posluchej</iframe>
 
-<form id="form" action="https://www.freecodecamp.com/email-submit">
-    <label for="email"></label>
-    <input type="email" name="email" id="email" placeholder="tipe here your e-mail">
-    <input type="submit" value="submit" id="submit">
-</form>
+    <div>
+        <section id="Home"></section>
+        <section id="Servers"></section>
+        <section id="Price"></section>
+    </div>
 
-<span>Copyright © 2023, Lukáš Hon</span>
+    <section id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+            <input id="submit" type="submit" value="Get Started" class="btn">
+        </form>
+    </section>
+
+    <div class="container">
+        <section id="features">
+            <div class="grid">
+                <div class="icon"><i class="fa-solid fa-server"></i></div>
+                <div class="desc">
+                    <h2>Premium Servers</h2>
+                    <p>
+                        Our server are the best in working. Servers made for super speed working.
+                    </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><i class="fa-solid fa-server"></i></div>
+                <div class="desc">
+                    <h2>Fast Shipping</h2>
+                    <p>
+                        We make sure you receive your server working as soon as we have
+                        finished making it. We also provide free returns if you are not
+                        satisfied.
+                    </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="desc">
+                    <h2>Saving your progress</h2>
+                    <p>
+                        Every time you make something on server will be save id our cloud.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <iframe id="video" height="315"
+                    src="https://www.youtube.com/watch?v=cY9_QB-uaVQ&ab_channel=stardewvalley"
+                    frameborder="0" allowfullscreen=""></iframe>
+        </section>
+        <section id="pricing">
+            <div class="product" id="tenor">
+                <div class="level">Basic server</div>
+                <h2>$600</h2>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="bass">
+                <div class="level">Medium server</div>
+                <h2>$900</h2>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="valve">
+                <div class="level">Ultra server</div>
+                <h2>$1200</h2>
+                <ol>
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span>Copyright 2023, Lukáš Hon</span>
+        </footer>
+    </div>
+</div>
 </body>
 </html>

@@ -1,7 +1,142 @@
-@import "https://www.youtube.com/watch?v=sgP5jeBccfI&ab_channel=Bluesoul";
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #DF2935;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0 20px;
+    display: grid;
+    justify-content: space-around;
+    background-color: #DF2935;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+#header-img {
+    width: 75%;
+    height: 85%;
+}
+
+#hero {
+    margin-top: 200px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+nav li {
+    padding-bottom: 5px;
+}
+
+.nav-link {
+    text-align: right;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #DF2935;
+    padding: 20px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media (min-width: 768px) {
+    /* CSS rules for desktop */
+}
+
+@media (max-width: 767px) {
+    /* CSS rules for mobile */
 }
