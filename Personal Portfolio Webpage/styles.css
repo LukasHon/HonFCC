@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: end;
+}
+
+#navbar ul li {
+    margin: 1rem;
+}
+
+#welcome-section ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
