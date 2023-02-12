@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    width: 30rem;
 }
 
 body {
@@ -16,6 +21,7 @@ body {
     line-height: 1.4;
     font-size: 1.8rem;
 }
+
 
 #navbar {
     background-color: #D00000;
@@ -37,6 +43,12 @@ body {
     font:x-large 'Roboto Condensed', sans-serif;
 }
 
+.nav-link {
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    color: #3F88C5;
+}
+
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -51,25 +63,82 @@ body {
      font-style: italic;
  }
 
- #projects {
-     background-color: #f7f7f7;
-     text-align: center;
- }
-
-#profile {
-    text-align: center;
-    margin: 2rem 0 2rem 0;
+#projects {
+    background-color: #A2AEBB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
 }
 
-.project-grid {
+.project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 20rem;
+    width: 100%;
+    column-gap: 2%;
+    row-gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+
+.project-list p {
+    color: #262730;
+}
+
+
+.project-photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.project-photo img {
+    width: 80%;
+    transition: width ease 1s;
+}
+
+.project-photo img:hover {
     width: 100%;
 }
 
-.icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -.125em;
+.project-description {
+    position: absolute;
+    bottom: 7%;
+}
+
+#projects {
+    margin-bottom: 3rem;
+}
+
+
+#profile {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: black;
+}
+
+.profile-link{
+    padding: 2rem 0 0 0;
+}
+
+.profile-link i:hover {
+    color: #d33f49;
+    transition: color 0.5s ease;
+}
+
+.fa-brands {
+    color: black;
+    padding: 1rem;
+    border: 20px;
+}
+
+footer {
+    height: 3rem;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 3rem;
+    padding-right: 1rem;
 }

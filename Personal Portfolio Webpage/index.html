@@ -5,12 +5,10 @@
     <meta name="viewport" content="width = device - width, initial - scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio Webpage</title>
-    <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous"
-    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link
             href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
             rel="stylesheet"
@@ -23,43 +21,53 @@
 <body>
 <section id="navbar">
     <ul>
-        <li  class="about"><a href="#welcome-section">About</a></li>
-        <li class="work"><a href="#projects">Work</a></li>
-        <li class="contact"><a href="#profile-link">Contact</a></li>
+        <a class="nav-link" href="#welcome-section">About</a>
+        <a class="nav-link" href="#projects">Work</a>
+        <a class="nav-link" href="#profile-link">Contact</a>
     </ul>
     <a href="#"></a>
 </section>
 <section id="welcome-section">
-  <h1>Hey Im Lukas</h1>
+    <h1>Hey Im Lukas</h1>
     <p>a web developer</p>
 </section>
 
 <section id="projects">
     <h2>My projects</h2>
-    <div class="project-grid">
-
-        <a href="https://lukashon.github.io/Timeline/"><img src="" alt=""><p>S</p></a>
-        <a href="https://lukashon.github.io/To_do_list/"><img src="" alt=""><p>S</p></a>
-        <a href="https://lukashon.github.io/search/"><img src="" alt=""><p>S</p></a>
-
+    <div class="project-list">
+        <img-text1>
+            <a class="project-photo" href="https://lukashon.github.io/Timeline/"><img
+                    src="../Product Landing Page/img/img.png" alt=""></a>
+            <p>Turistické destinace</p>
+        </img-text1>
+        <img-text2>
+            <a class="project-photo" href="https://lukashon.github.io/To_do_list/"><img
+                    src="../Product Landing Page/img/img_1.png" alt="">
+                </a><p>Eco project</p>
+        </img-text2>
+        <img-text3>
+            <a class="project-photo" href="https://lukashon.github.io/search/"><img
+                    src="../Product Landing Page/img/img_2.png" alt="">
+                </a><p>Time line</p>
+        </img-text3>
     </div>
 </section>
 
 <section id="profile">
+    <p>Lets work together.</p>
+    <p>Do you like coffee ?!</p>
+
     <div class="profile-link">
-        Lets work together.
-        <p>Do you like coffee ?!</p>
-        <a id="profile-link" href="https://github.com/LukasHon" target="_blank"><i class="fa-brands fa-github-square"></i>>Git Hub</a>
+        Contact me:
+        <a id="profile-link" href="https://github.com/LukasHon" target="_blank"><i
+                class="fa-brands fa-github-square"></i></a>
+        <a href="https://www.instagram.com/lukaskhon/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
     </div>
 </section>
 
-<footer class="footer">
-    <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <span>Copyright 2023, Lukáš Hon</span>
+<footer>
+    <p>Copyright 2023, Lukáš Hon</p>
 </footer>
 
 </body>
